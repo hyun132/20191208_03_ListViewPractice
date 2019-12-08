@@ -34,7 +34,7 @@ class UserAdapter (context: Context, resid:Int, list:ArrayList<User>) : ArrayAda
         val userAddressTxt = row.findViewById<TextView>(R.id.userAddressTxt)
         val genderTxt = row.findViewById<TextView>(R.id.genderTxt)
 
-        userNameTxt.text = data.name
+        userNameTxt.text = data.name // 리스트뷰
         userAddressTxt.text = "(${data.address})"
         if(data.isWomen){
             genderTxt.text ="여성"
